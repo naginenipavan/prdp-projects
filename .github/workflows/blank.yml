@@ -120,10 +120,10 @@ jobs:
         AUTHOR: "Andres Morales"
       run: |
         artifactName=$(ls *.jar | head -1)
-        mvn deploy -DmuleDeploy --file check-in-papi-app/pom.xml \
+        mvn deploy -DmuleDeploy --settings=~/home/runner/.m2/settings.xml --file check-in-papi-app/pom.xml \
         -Dapplication.name=check-in-app-pk-cicd \
         -Denvironment=dev \ 
         -Dapi.id=18030098 \ 
         -Dencrypt.key=${{ secrets.AP_ENCRYPT_KEY }} \ 
         -Dclient_id=${{ secrets.AP_CLIENTID }} \
-        -Dclient_secret=${{ secrets.AP_CLIENTSECRET }} --settings=~/.m2/settings.xml
+        -Dclient_secret=${{ secrets.AP_CLIENTSECRET }} 
