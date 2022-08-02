@@ -1,0 +1,14 @@
+api:
+  majorVersion: "v1"
+  id: "18030098"
+
+http:
+  port: "8082"
+ 
+tls.keystore:
+  type: "PKCS12"
+  path: "check-in-papi.p12"
+  alias: "localhost"
+
+  
+  
