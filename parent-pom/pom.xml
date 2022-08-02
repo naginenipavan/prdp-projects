@@ -15,8 +15,8 @@
 		<groupId>f491e608-5f75-4556-b817-86c7b66b5105</groupId>
 		<artifactId>solutions-bom</artifactId>
 		<version>1.0.5</version>
-		<!-- <relativePath>../parent-pom/pom.xml</relativePath> -->
-		<relativePath/>
+		<!-- <relativePath>../bom/pom.xml</relativePath> -->
+		<relativePath>../bom/pom.xml</relativePath>
 	</parent>
 
 	<groupId>f491e608-5f75-4556-b817-86c7b66b5105</groupId>
