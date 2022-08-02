@@ -121,9 +121,9 @@ jobs:
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn --file check-in-papi-app/pom.xml deploy -DmuleDeploy \
-        -Dapplication.name="check-in-app-pk-cicd" \
-        -Denvironment="dev" \ 
-        -Dapi.id="18030098" \ 
+        -Dapplication.name=check-in-app-pk-cicd \
+        -Denvironment=dev \ 
+        -Dapi.id=18030098 \ 
         -Dencrypt.key=${{ secrets.AP_ENCRYPT_KEY }} \ 
-        -Dap.clientid=${{ secrets.AP_CLIENTID }} \
-        -Dap.clientsecret=${{ secrets.AP_CLIENTSECRET }}
+        -Dclient_id=${{ secrets.AP_CLIENTID }} \
+        -Dclient_secret=${{ secrets.AP_CLIENTSECRET }}
