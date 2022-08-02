@@ -120,7 +120,7 @@ jobs:
         AUTHOR: "Andres Morales"
       run: |
         artifactName=$(ls *.jar | head -1)
-        mvn deploy --file check-in-papi-app/pom.xml -DmuleDeploy \
+        mvn --file check-in-papi-app/pom.xml deploy -DmuleDeploy \
         -Dapplication.name="check-in-app-pk-cicd" \
         -Denvironment="dev" \ 
         -Dapi.id="18030098" \ 
