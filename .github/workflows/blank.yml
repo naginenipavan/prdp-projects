@@ -119,7 +119,7 @@ jobs:
       env:
         AUTHOR: "Andres Morales"
       run: |
-        artifactName=$(ls *.jar | head -1)
+        artifactName=$(ls check-in-papi-app/target/*.jar | head -1)
         mvn deploy -DmuleDeploy --file check-in-papi-app/pom.xml \
         -Dapplication.name=check-in-app-pk-cicd \
         -Denvironment=dev \ 
